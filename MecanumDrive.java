@@ -78,7 +78,7 @@ public class MecanumDrive extends OpMode {
 
         // Loop through all values in the speeds[] array and find the greatest
         // *magnitude*.  Not the greatest velocity.
-        double max = speeds[0];
+        double max = Math.abs(speeds[0]);
         for(int i = 0; i < speeds.length; i++) {
             if ( max < Math.abs(speeds[i]) ) max = Math.abs(speeds[i]);
         }
